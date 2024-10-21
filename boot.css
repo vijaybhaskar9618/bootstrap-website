@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body li {
+    list-style-type: none;
+}
+
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+body .gs {
+    background-color: var(--accent-color);
+    color: white;
+
+}
+
+body .gs:hover {
+    background-color: rgb(44, 158, 202);
+    color: white;
+}
+
+body .gsn {
+    background-color: #ffffff;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+
+}
+
+body .gsn:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: 2px solid var(--accent-color);
+    font-weight: 500;
+
+    .sp {
+        margin-right: 3px;
+    }
+
+    i {
+        color: var(--surface-color);
+        font-weight: 500;
+    }
+}
+
+
+body .gsnn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+
+body p {
+    color: var(--default-color);
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+
+}
+
+section,
+.section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    /* scroll-margin-top: 88px; */
+    overflow: clip;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.head h2:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+
+}
+
+.head h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: var(--accent-color);
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+
+}
+
+.head p {
+    margin-bottom: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+
+    #mainnav {
+        width: 100%;
+    }
+
+    #navv {
+        background-color: #3d4d6ad4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        a {
+            color: white;
+        }
+
+
+    }
+
+    .hero {
+        /* height: 98vh; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+        .container {
+
+
+            .mainn {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+
+                .herobox {
+                    h1 {
+                        font-weight: bolder;
+                        font-size: 50px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                        color: azure;
+                    }
+
+                    .ss {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 30px;
+
+                        .gl {
+                            text-decoration: none;
+                            color: rgb(223, 223, 223);
+                            font-weight: bold;
+                            font-size: 25px;
+                        }
+
+                    }
+                }
+
+                img {
+                    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+                }
+            }
+
+        }
+    }
+
+}
+
+.lbc {
+    background-color: #f5f6f8;
+    /* background-color: orange; */
+
+}
+
+i {
+    color: var(--accent-color);
+}
+
+.dark-background {
+    --background-color: #37517e;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #4668a2;
+    --contrast-color: #ffffff;
+    background-color: var(--background-color);
+    color: var(--default-color);
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.slick-slide {
+    margin: 30px 60px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.accordion-item {
+    margin-bottom: 30px;
+
+    .accordion-header {
+        border: none;
+        outline: none;
+
+        .accordion-button {
+            background: none;
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+}
+
+.sk {
+    color: var(--default-color);
+    font-weight: 700;
+
+    .right {
+        float: right;
+        padding-right: 10px;
+    }
+}
+
+.progress-bar {
+    background-color: var(--heading-color);
+    border: none;
+    box-shadow: none;
+}
+
+.services .service-item {
+    background-color: var(--surface-color);
+    border: none;
+    outline: none;
+    padding: 50px 30px;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.31);
+    transition: ease-in-out 0.4s;
+
+    a {
+        color: var(--heading-color);
+    }
+
+    .icon {
+        i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+.services .service-item:hover {
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.31);
+    transform: translateY(-10px);
+
+    a {
+        color: var(--accent-color);
+    }
+}
+
+.call {
+    background: linear-gradient(rgba(33, 48, 83, 0.867), rgba(59, 97, 147, 0.601)), url(./img/cta-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    width: calc(100%);
+    padding: 120px 0;
+}
+
+.call h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.call p {
+    color: white;
+}
+
+.call .cta-btn {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+.call .cta-btn:hover {
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.timg {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: 20px 0 0 20px;
+}
+
+.col .card {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.31);
+    transition: ease-in-out 0.4s;
+    border: none;
+    outline: none;
+}
+
+.col .card:hover {
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.31);
+    transform: translateY(-10px);
+}
+
+.planss .mon {
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+
+.planss i {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.planss p {
+    color: gray;
+}
+
+.planss h4 {
+    font-weight: bold;
+}
+
+del {
+    color: gray;
+}
+
+.card {
+    border: none;
+    /* border-radius: 10px; */
+}
+
+.plancard2 {
+    border-top: 4px solid var(--accent-color);
+}
+
+.testslide img {
+    height: 120px;
+}
+
+.testslide h5 {
+    font-weight: bold;
+}
+
+.testslide .ratt {
+    i {
+        color: gold;
+        margin-right: 3px;
+    }
+}
+
+.testslide .qt {
+    i {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+.cntbox1 {
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    box-shadow: 5px 5px 20px rgb(177, 177, 177);
+}
+
+.cntbox i {
+    background-color: #e4eeffc8;
+
+}
+
+.cntbox1 input {
+    padding: 5px 5px;
+    height: 3rem;
+}
+
+footer {
+    padding: 30px 0 50px 0;
+
+
+}
+
+.sub {
+    display: flex;
+
+    .sub1 {
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        margin: 0;
+        width: 300px;
+        margin-right: -8px;
+        padding: 6px 12px;
+
+    }
+
+    .sub2 {
+        margin-left: -5px;
+        border: none;
+        border-radius: 15px;
+        padding: 6px 12px;
+
+    }
+
+}
+
+.ani {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.progress {
+    animation: progressbar linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes progressbar {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+
+}
+
+
+.accordion-button{
+    h6:hover{
+        color: var(--accent-color);
+    }
+}
+
+.accordion-button:not(.collapsed)
+{
+    h6{
+        color: var(--accent-color);
+    }
+}
